@@ -1,0 +1,38 @@
+:root {
+    --color-accent: #00008b;
+    --color-accent-1: #b4efe1;
+    --color-accent-2: #126e59;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+}
+
+$bp-large: 68.75em;         //Segundo bp - 1100px/16px
+$bp-small: 37.5em;        // Quarto bp - 600px/16px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; 
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
